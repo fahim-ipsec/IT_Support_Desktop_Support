@@ -5,9 +5,9 @@
     This script checks CPU, RAM, Disk Space, and Uptime.
     Generates a health report and saves it to the desktop.
 .AUTHOR
-    [YOUR NAME]
+    [fahim-ipsec]
 .DATE
-    [CURRENT DATE]
+    [8/25/2026]
 #>
 
 # Clear the screen for a clean look
