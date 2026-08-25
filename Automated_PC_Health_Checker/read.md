@@ -5,7 +5,7 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 ## 📌 Project Overview
-This is a **Desktop Support Automation Tool** built using PowerShell. It checks the health of a Windows PC and generates a detailed report. As an aspiring IT Support professional, I built this tool to demonstrate my ability to automate routine system maintenance tasks.
+This is a **Desktop Support Automation Tool** built using PowerShell. It checks the health of a Windows PC and generates a detailed report. As an aspiring IT Support professional, I built this tool to automate routine system maintenance tasks.
 
 ## 🚀 Features
 - ✅ Checks **CPU Usage** with color-coded alerts (Green/Yellow/Red)
@@ -15,17 +15,7 @@ This is a **Desktop Support Automation Tool** built using PowerShell. It checks 
 - ✅ Tests **Internet Connectivity** (Pings Google DNS)
 - ✅ Generates a **.txt Health Report** on the Desktop with timestamp
 
-## 📸 Screenshots
-
-### Script Running in PowerShell
-![Script Running](screenshots/script-running.png)
-
-### Health Report Generated on Desktop
-![Health Report](screenshots/report-on-desktop.png)
-
-### Sample Report Content
-![Report Content](screenshots/report-content.png)
-
+x
 ## 🛠️ How to Use
 
 ### Prerequisites
