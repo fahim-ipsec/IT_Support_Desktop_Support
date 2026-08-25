@@ -27,6 +27,10 @@ Clone this repository or download `PC-Health-Check.ps1`
 
 ### Step 2: Run PowerShell as Administrator
 Press `Windows + X` and select **Windows PowerShell (Admin)**
+ ## Right-click and Run (Easy way)
+   - Save the script on your Desktop
+   - Right-click on PC-Health-Check.ps1
+   - Select "Run with PowerShell"
 
 ### Step 3: Allow Script Execution (One-time)
 ```powershell
