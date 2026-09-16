@@ -31,21 +31,6 @@ This repository contains 15 production-ready PowerShell scripts designed to auto
 * **PowerShell Version**: 5.1 or 7.x
 * **Permissions**: Local Administrator / RSAT tools installed for AD scripts.
 
----
-
-## 📂 Detailed Documentation
-
-### Project 01: PC Health Check
-* **Directory**: `/01-PC-Health-Check/`
-* **Features**:
-  * Real-time queries for CPU load, RAM utilization, and system disk availability.
-  * Customizable thresholds for warning/critical states.
-  * Clean color-coded terminal output.
-
- ### Project 02: Bulk AD User Creation
-* **Directory**: `/02-Bulk-AD-User-Creation/`
-* **Key Cmdlets**: `Import-Csv`, `New-ADUser`, `Get-ADUser`
-* **Features**:
   * Auto-generates standard enterprise usernames (`FirstInitial + LastName`).
   * Validates Active Directory target OUs prior to execution.
   * Assigns secure default passwords and forces a password reset on first login.
