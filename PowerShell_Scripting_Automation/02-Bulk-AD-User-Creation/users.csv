@@ -1,0 +1,4 @@
+Firstname,Lastname,Department,Title,OUPath
+John,Doe,IT,Systems Administrator,"OU=IT,OU=Employees,DC=lab,DC=local"
+Jane,Smith,HR,HR Specialist,"OU=HR,OU=Employees,DC=lab,DC=local"
+Alex,Taylor,Sales,Account Executive,"OU=Sales,OU=Employees,DC=lab,DC=local"
