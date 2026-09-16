@@ -41,3 +41,12 @@ This repository contains 15 production-ready PowerShell scripts designed to auto
   * Real-time queries for CPU load, RAM utilization, and system disk availability.
   * Customizable thresholds for warning/critical states.
   * Clean color-coded terminal output.
+
+ ### Project 02: Bulk AD User Creation
+* **Directory**: `/02-Bulk-AD-User-Creation/`
+* **Key Cmdlets**: `Import-Csv`, `New-ADUser`, `Get-ADUser`
+* **Features**:
+  * Auto-generates standard enterprise usernames (`FirstInitial + LastName`).
+  * Validates Active Directory target OUs prior to execution.
+  * Assigns secure default passwords and forces a password reset on first login.
+  * Handles duplicate accounts and missing paths gracefully without stopping the script execution.
