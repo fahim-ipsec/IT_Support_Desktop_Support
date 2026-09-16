@@ -21,7 +21,7 @@ Open **PowerShell** on your workstation.
 
 ### Step 2: Navigate to Project Directory
 ```powershell
-cd .\01-PC-Health-Check
+cd .\01-PC-Health-Check.
 
 ### Step 3: Run Script with Default Settings
 Executes the script targeting default alert baselines (80% CPU, 85% RAM, 90% Disk):
