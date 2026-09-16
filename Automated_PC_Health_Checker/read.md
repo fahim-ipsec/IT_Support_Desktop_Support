@@ -1,3 +1,5 @@
+[![PC Health Checker](https://github.com/fahim-ipsec/IT_Support_Desktop_Support/blob/57c65dd94b5ab17e3b52abd895a274ef54f5d4f6/Automated_PC_Health_Checker/Automated_PC_Health_Checker_LinkedIn.png)](https://github.com/XXXXXX/IT_Support_Desktop_Support)
+
 # Automated PC Health Checker
 
 ![PowerShell](https://img.shields.io/badge/PowerShell-5.1+-blue)
