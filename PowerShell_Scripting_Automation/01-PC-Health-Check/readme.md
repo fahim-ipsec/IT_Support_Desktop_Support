@@ -1,4 +1,4 @@
-@'
+Set-Content -Path ".\README.md" -Value @"
 # Project 01: PC Health Check Script
 
 ## 📌 Overview
@@ -20,13 +20,19 @@ This script queries local machine performance metrics (CPU load, RAM consumption
 Open **PowerShell** on your workstation.
 
 ### Step 2: Navigate to Project Directory
-```powershell
-cd .\01-PC-Health-Check.
+\`\`\`powershell
+cd .\01-PC-Health-Check
+\`\`\`
 
 ### Step 3: Run Script with Default Settings
 Executes the script targeting default alert baselines (80% CPU, 85% RAM, 90% Disk):
+\`\`\`powershell
 .\Get-PCHealthReport.ps1
+\`\`\`
 
 ### Step 4: Run Script with Custom Thresholds
 Adjust alert sensitivities manually using parameter overrides:
+\`\`\`powershell
 .\Get-PCHealthReport.ps1 -CpuThreshold 50 -RamThreshold 60 -DiskThreshold 70
+\`\`\`
+"@
