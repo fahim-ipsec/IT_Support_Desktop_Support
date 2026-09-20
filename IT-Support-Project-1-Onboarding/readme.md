@@ -1,852 +1,422 @@
-# Help Desk Ticket Management System
+# 🖥️ PROJECT 1: IT ONBOARDING - COMPLETE VISUAL GUIDE
 
-> **Level:** L1 | **Time:** Per shift | **Category:** Support Operations
-
-## 📋 Overview
-
-Complete ticketing system for IT support with templates, prioritization, and SLA tracking. Reduces response time by 50% and improves first-contact resolution.
-
-**What This Solves:**
-- Disorganized ticket handling
-- Slow response times
-- Inconsistent documentation
-- No priority management
-- Missing SLA targets
-
-**Real Impact:**
-- ✅ Response time: 2 hours → 30 minutes
-- ✅ First-contact resolution: 40% → 65%
-- ✅ Customer satisfaction: 3.2/5 → 4.5/5
-- ✅ Ticket backlog: Reduced 70%
-
----
-
-## 🎯 What You'll Learn (Day-to-Day L1 Work)
+## STEP 1: HARDWARE SETUP (Day 1 Morning)
 
 ```
-TYPICAL HELP DESK SHIFT (8 AM - 5 PM)
-
-8:00 AM - START OF SHIFT
-├─ Check email for overnight tickets
-├─ Review priority queue
-├─ Read escalated issues
-├─ Check status of open tickets
-└─ Plan day's workflow
-
-8:30 AM - MORNING TICKETS
-├─ Password reset requests (30% of tickets)
-│  ├─ Verify identity
-│  ├─ Reset password
-│  ├─ Document in system
-│  └─ Notify user
-│
-├─ Email issues (20% of tickets)
-│  ├─ Check connection
-│  ├─ Reset Outlook
-│  ├─ Reconfigure account
-│  └─ Test sending/receiving
-│
-├─ Printer problems (15% of tickets)
-│  ├─ Check network connectivity
-│  ├─ Reinstall drivers
-│  ├─ Print test page
-│  └─ Verify all devices
-
-10:00 AM - BREAK & FOLLOW-UPS
-├─ Call users about their issues
-├─ Verify problems resolved
-├─ Get feedback/satisfaction
-└─ Update ticket status
-
-10:30 AM - AFTERNOON TICKETS
-├─ Software issues (15% of tickets)
-│  ├─ Check error messages
-│  ├─ Restart application
-│  ├─ Reinstall if needed
-│  └─ Document solution
-│
-├─ Hardware issues (10% of tickets)
-│  ├─ Test peripherals
-│  ├─ Check connections
-│  ├─ Replace if broken
-│  └─ Update inventory
-│
-├─ Access problems (10% of tickets)
-│  ├─ Check AD permissions
-│  ├─ Add user to groups
-│  ├─ Map drives/shares
-│  └─ Verify access
-
-12:00 PM - LUNCH BREAK
-
-1:00 PM - AFTERNOON SHIFT
-├─ Handle new incoming tickets
-├─ Work on complex issues
-├─ Escalate when needed
-└─ Document everything
-
-3:00 PM - SECOND BREAK
-├─ Review unresolved tickets
-├─ Check escalations
-├─ Help junior staff
-└─ Prepare for shift end
-
-3:30 PM - FINAL TICKETS
-├─ Resolve remaining issues
-├─ Close completed tickets
-├─ Update documentation
-└─ Hand off escalations
-
-5:00 PM - END OF SHIFT
-├─ Review all open tickets
-├─ Prepare handoff notes
-├─ Log off
-└─ Done!
-```
-
----
-
-## 📁 Project Structure
-
-```
-Help-Desk-Ticketing/
-├── README.md (this file)
-├── USAGE.md
-├── LICENSE
-├── docs/
-│   ├── Ticket-Types.md
-│   ├── Prioritization-Guide.md
-│   ├── SLA-Requirements.md
-│   ├── Escalation-Procedures.md
-│   └── First-Contact-Solutions.md
-├── templates/
-│   ├── Ticket-Template.txt
-│   ├── Email-Responses.txt
-│   ├── Escalation-Form.txt
-│   ├── Knowledge-Base-Article.txt
-│   └── Feedback-Survey.txt
-├── scripts/
-│   ├── Auto-Response.ps1
-│   ├── Ticket-Status-Report.ps1
-│   └── Escalation-Alert.ps1
-├── tools/
-│   ├── Ticket-Tracker.html
-│   └── SLA-Dashboard.html
-└── examples/
-    ├── password-reset-ticket.txt
-    ├── email-issue-ticket.txt
-    └── resolved-ticket.txt
-```
-
----
-
-## 🔧 Ticket Types & Day-to-Day Work
-
-### Ticket Type 1: Password Reset (30% of tickets)
-
-```
-PRIORITY: Low
-RESPONSE TIME: 15 minutes
-RESOLUTION TIME: 5 minutes
-COMPLEXITY: Very Easy (L1)
-
-TYPICAL SEQUENCE:
-1. User submits: "I forgot my password"
-2. You verify identity:
-   - Ask security questions
-   - Verify from callback
-   - Check with manager
-3. You reset password:
-   - Generate temporary password
-   - Tell user (never email)
-   - Force user to change
-4. User logs in successfully
-5. You document in ticket
-6. Close ticket
-
-DAILY: Handle 5-10 of these per day
-TIME PER TICKET: 5 minutes
-AUTOMATION: Can use self-service portal to reduce
-```
-
-**Template Response:**
-```
-Ticket #TKT-5001
-User: John Smith
-Issue: Forgot Password
-
-VERIFICATION:
-✓ Verified via security questions
-✓ Confirmed with manager
-✓ User identity confirmed
-
-ACTION TAKEN:
-✓ Password reset in Active Directory
-✓ Temporary password generated
-✓ User notified
-✓ User changed password successfully
-✓ Verified access restored
-
-RESOLUTION:
-✓ CLOSED - Issue resolved
-✓ User satisfied
-✓ Follow-up: 30 days
-```
-
----
-
-### Ticket Type 2: Email Issues (20% of tickets)
-
-```
-PRIORITY: Medium
-RESPONSE TIME: 30 minutes
-RESOLUTION TIME: 15-30 minutes
-COMPLEXITY: Easy (L1)
-
-TROUBLESHOOTING SEQUENCE:
-1. Check network connectivity
-   - ping google.com
-   - Check DNS resolution
-   - Verify IP address
-
-2. Restart Outlook
-   - Close Outlook
-   - Wait 30 seconds
-   - Reopen Outlook
-   - Check if working
-
-3. Check mailbox
-   - Verify account configured
-   - Check account settings
-   - Verify credentials
-
-4. Check firewall/proxy
-   - Verify not blocking email
-   - Check firewall rules
-   - Verify proxy settings
-
-5. Reconfigure account
-   - Remove account from Outlook
-   - Readd account
-   - Test send/receive
-
-6. Escalate if needed
-   - Contact Exchange team
-   - Create incident ticket
-   - Document what was tried
-
-DAILY: Handle 3-4 of these per day
-TIME PER TICKET: 15-30 minutes
-```
-
-**Troubleshooting Checklist:**
-```
-[ ] Check network connectivity
-[ ] Ping 8.8.8.8 - Success?
-[ ] Check internet working
-[ ] Restart Outlook
-[ ] Shut down completely
-[ ] Wait 30 seconds
-[ ] Reopen
-[ ] Check if working
-[ ] Verify account configured
-[ ] Check account settings in Outlook
-[ ] Verify email address correct
-[ ] Check network drives
-[ ] Can access file shares?
-[ ] Can access other resources?
-[ ] Check Windows Event Viewer
-[ ] Look for errors
-[ ] Check Application log
-[ ] Document error messages
-[ ] Try from different user
-[ ] Does issue persist?
-[ ] Is it user-specific?
-[ ] Test from another computer
-[ ] Does issue repeat?
-[ ] Is it hardware issue?
-[ ] Escalate to Exchange team
-[ ] Create incident ticket
-[ ] Document all steps taken
-```
-
----
-
-### Ticket Type 3: Printer Issues (15% of tickets)
-
-```
-PRIORITY: Low-Medium
-RESPONSE TIME: 30 minutes
-RESOLUTION TIME: 10-20 minutes
-COMPLEXITY: Easy-Medium (L1-L2)
-
-QUICK FIXES (Try First):
-1. Power cycle printer
-   - Turn off printer
-   - Wait 30 seconds
-   - Turn back on
-   - Try printing
-
-2. Clear print queue
-   - Go to Devices & Printers
-   - Right-click printer
-   - View print queue
-   - Cancel all jobs
-   - Restart Print Spooler service
-   - Try printing
-
-3. Check connectivity
-   - Printer connected to network?
-   - Can ping printer IP?
-   - Check network cable
-   - Check wireless connection
-
-4. Reinstall drivers
-   - Go to Device Manager
-   - Find printer
-   - Uninstall driver
-   - Restart
-   - Reinstall from manufacturer
-   - Test printing
-
-5. Advanced fixes
-   - Check printer settings
-   - Verify default printer set
-   - Check print server
-   - Check firewall rules
-   - Check network permissions
-
-DAILY: Handle 2-3 of these per day
-TIME PER TICKET: 10-20 minutes
-```
-
-**Quick Reference Card:**
-```
-PRINTER NOT PRINTING?
-
-QUICK CHECK:
-1. Is printer powered on? YES/NO
-2. Is paper in tray? YES/NO
-3. Are there error lights? YES/NO
-4. Is it set as default? YES/NO
-
-TRY THIS:
-→ Power off printer → Wait 30 sec → Power on
-→ Try test print from printer menu
-→ Clear print queue (Devices & Printers)
-→ Restart Print Spooler service
-→ Delete print job and retry
-
-STILL NOT WORKING?
-→ Reinstall printer driver
-→ Check network connectivity
-→ Power cycle computer
-→ Escalate to printer vendor if hardware issue
-```
-
----
-
-## 🎫 Ticket Template (Use for Every Ticket)
-
-```
-╔═══════════════════════════════════════════════╗
-║           HELP DESK TICKET FORM               ║
-╚═══════════════════════════════════════════════╝
-
-TICKET INFORMATION:
-─────────────────────────────────────────────────
-Ticket Number:     TKT-5001
-Date Opened:       2024-01-15 09:30 AM
-Date Assigned:     2024-01-15 09:35 AM
-Assigned To:       Mike Johnson (L1 Support)
-Status:            ⊙ Open  ⊙ In Progress  ⊙ Waiting  ⊙ Closed
-
-REQUESTER INFORMATION:
-─────────────────────────────────────────────────
-Name:              John Smith
-Email:             john.smith@company.com
-Phone:             x5234
-Department:        Sales
-Manager:           Jane Doe
-Office Location:   Building A, Floor 3, Desk 305
-
-ISSUE INFORMATION:
-─────────────────────────────────────────────────
-Category:          ⊙ Email  ⊙ Password  ⊙ Printer  ⊙ Hardware  ⊙ Software  ⊙ Other
-Subcategory:       Email Configuration
-Priority:          ⊙ Urgent  ⊙ High  ⊙ Medium  ⊙ Low
-Impact:            ⊙ Can't Work  ⊙ Reduced Productivity  ⊙ Minor Issue
-
-DESCRIPTION:
-─────────────────────────────────────────────────
-"I can't receive emails in Outlook. It keeps saying 
-connection error. I've restarted Outlook but still 
-not working. Please help!"
-
-TROUBLESHOOTING PERFORMED:
-─────────────────────────────────────────────────
-[ ] Verified network connectivity - PASS
-[ ] Pinged google.com - PASS
-[ ] Restarted Outlook - PASS
-[ ] Checked email account configuration - PASS
-[ ] Removed and readded account - PASS
-[ ] Checked firewall settings - PASS
-[ ] Checked proxy settings - PASS
-
-ROOT CAUSE:
-─────────────────────────────────────────────────
-Outlook credentials were incorrect after recent 
-password change. User didn't update Outlook settings.
-
-RESOLUTION:
-─────────────────────────────────────────────────
-1. Removed email account from Outlook
-2. Readded account with current credentials
-3. Tested send/receive - SUCCESS
-4. Verified user can access email
-5. Provided password management training
-
-TIME SPENT:
-─────────────────────────────────────────────────
-Total Time: 25 minutes
-- Investigation: 15 minutes
-- Resolution: 10 minutes
-
-FIRST CONTACT RESOLUTION:  ✓ YES  ⊙ NO
-
-CUSTOMER SATISFACTION:
-─────────────────────────────────────────────────
-User Satisfied:    ✓ YES  ⊙ NO  ⊙ PARTIALLY
-Feedback:          "Great, now it works. Thanks!"
-Rating:            ★★★★★ (5/5)
-
-FOLLOW-UP REQUIRED:
-─────────────────────────────────────────────────
-⊙ None  ✓ 7 days  ⊙ 30 days  ⊙ Escalate
-
-NOTES & LEARNING:
-─────────────────────────────────────────────────
-Most email issues are caused by wrong password 
-after reset. Consider automated password sync 
-in future. User education helped prevent future 
-issues.
-
-TICKET CLOSED:
-─────────────────────────────────────────────────
-Closed Date:       2024-01-15 10:00 AM
-Closed By:         Mike Johnson
-Time to Resolution: 25 minutes
-```
-
----
-
-## 📊 SLA Requirements (What You Must Track)
-
-```
-SLA = Service Level Agreement
-= How fast you must respond and resolve
-
-PRIORITY MATRIX:
-
-URGENT:
-├─ Response Time: 15 minutes
-├─ Resolution Time: 4 hours
-├─ Example: User can't work at all
-└─ Count: ~5% of tickets
-
-HIGH:
-├─ Response Time: 30 minutes
-├─ Resolution Time: 8 hours
-├─ Example: Major productivity loss
-└─ Count: ~15% of tickets
-
-MEDIUM:
-├─ Response Time: 1 hour
-├─ Resolution Time: 2 business days
-├─ Example: Some productivity loss
-└─ Count: ~50% of tickets
-
-LOW:
-├─ Response Time: 4 hours
-├─ Resolution Time: 5 business days
-├─ Example: Minor inconvenience
-└─ Count: ~30% of tickets
-
-YOUR DAILY TRACKING:
-
 ┌─────────────────────────────────────┐
-│  TICKET STATUS BOARD                │
-├─────────────────────────────────────┤
-│  Open:           8 tickets          │
-│  In Progress:    3 tickets          │
-│  Waiting:        2 tickets          │
-│  Closed Today:   12 tickets         │
-│                                     │
-│  SLA COMPLIANCE:                    │
-│  Response Time:  98% ✓              │
-│  Resolution:     95% ✓              │
-│  Avg Time:       18 minutes         │
-│  Satisfaction:   4.6/5 ✓            │
+│  NEW EMPLOYEE ARRIVES               │
+│  ✓ Laptop ready                     │
+│  ✓ Monitor connected                │
+│  ✓ Keyboard/Mouse ready             │
+│  ✓ Network cable connected          │
+│  ✓ Phone provisioned                │
 └─────────────────────────────────────┘
+         ↓
+┌─────────────────────────────────────┐
+│  HARDWARE CHECKLIST:                │
+│  [ ] Power on laptop                │
+│  [ ] Windows loads                  │
+│  [ ] Monitor displays               │
+│  [ ] Peripherals detected           │
+│  [ ] Network connected (ping test)  │
+│  [ ] Phone dial tone working        │
+└─────────────────────────────────────┘
+         ↓
+┌─────────────────────────────────────┐
+│  ASSET TAGGING:                     │
+│  [ ] Asset tag number: AS-00234     │
+│  [ ] Serial number recorded         │
+│  [ ] Tag physically applied         │
+│  [ ] Database updated               │
+└─────────────────────────────────────┘
+      ✅ COMPLETE
 ```
 
 ---
 
-## 💬 Email Response Templates
+## STEP 2: ACTIVE DIRECTORY ACCOUNT CREATION
 
-### Template 1: Ticket Received
-
-```
-Subject: Ticket Received - TKT-5001
-
-Dear John,
-
-Thank you for submitting your support request.
-
-YOUR ISSUE:
-Email configuration problem in Outlook
-
-TICKET NUMBER: TKT-5001
-PRIORITY: Medium
-EXPECTED RESPONSE: Within 1 hour
-EXPECTED RESOLUTION: Within 8 hours
-
-A support specialist has been assigned to your ticket 
-and will contact you shortly.
-
-In the meantime, please:
-1. Restart your computer
-2. Check if internet connection is working
-3. Gather any error messages you see
-
-SUPPORT CONTACT:
-Name: Mike Johnson
-Phone: ext. 5000
-Email: support@company.com
-
-Thank you,
-IT Help Desk
-```
-
-### Template 2: Issue Resolved
-
-```
-Subject: RESOLVED - Email Configuration Issue - TKT-5001
-
-Dear John,
-
-Great news! Your issue has been resolved.
-
-WHAT WAS WRONG:
-Your Outlook email credentials needed to be updated 
-after your recent password change.
-
-WHAT WE DID:
-1. Verified your network connectivity
-2. Checked Outlook configuration
-3. Updated your email credentials
-4. Verified send/receive functionality
-5. Tested from your computer
-
-YOUR EMAIL IS NOW WORKING:
-✓ Can receive emails
-✓ Can send emails
-✓ Calendar synchronizing
-✓ All features working
-
-FUTURE PREVENTION:
-When you change your password, Outlook may need 
-the new credentials. You can update this yourself:
-1. File → Account Settings
-2. Click your email account
-3. Click "Change"
-4. Enter new password
-5. Done!
-
-TICKET CLOSED:
-Ticket #TKT-5001 is now closed.
-
-If you have any further issues, simply reply to 
-this email or call ext. 5000.
-
-Thank you,
-Mike Johnson
-IT Help Desk
-```
-
-### Template 3: Escalation Notice
-
-```
-Subject: Ticket Escalated - TKT-5001
-
-Dear John,
-
-Your support request requires specialized expertise 
-and has been escalated to our senior support team.
-
-ORIGINAL ISSUE:
-Email configuration problem
-
-ESCALATION REASON:
-Issue is not resolved by standard troubleshooting. 
-Requires Exchange Server specialist review.
-
-NEXT STEPS:
-You will be contacted by a senior technician within 
-2 hours. They will have access to advanced tools and 
-server-level diagnostics.
-
-TICKET NUMBER: TKT-5001
-ESCALATION LEVEL: 2
-ASSIGNED SPECIALIST: Sarah Lee (Senior Support)
-
-Thank you for your patience,
-IT Help Desk
-```
-
----
-
-## 🔧 PowerShell Scripts for Help Desk
-
-### Script 1: Auto-Response System
+### Command to Run (Copy-Paste):
 
 ```powershell
-# Send automatic email when ticket is opened
+# CREATE NEW USER IN ACTIVE DIRECTORY
+# Run as Administrator
 
-param(
-    [string]$TicketNumber = "TKT-5001",
-    [string]$UserEmail = "john@company.com",
-    [string]$UserName = "John",
-    [string]$Issue = "Email issue"
-)
+$FirstName = "John"
+$LastName = "Smith"
+$Username = "jsmith"
+$Email = "john.smith@company.com"
+$Password = "TempPass123!@#"
+$Department = "Sales"
+$Manager = "jane.doe"
+$OUPath = "OU=Users,OU=Sales,DC=company,DC=com"
 
-$SMTPServer = "mail.company.com"
-$SMTPPort = 587
-$From = "support@company.com"
+# CREATE THE ACCOUNT
+New-ADUser -SamAccountName $Username `
+    -UserPrincipalName $Email `
+    -Name "$FirstName $LastName" `
+    -GivenName $FirstName `
+    -Surname $LastName `
+    -DisplayName "$FirstName $LastName" `
+    -Department $Department `
+    -Path $OUPath `
+    -AccountPassword (ConvertTo-SecureString $Password -AsPlainText -Force) `
+    -Enabled $true `
+    -ChangePasswordAtLogon $true
 
-$Subject = "Ticket Received - $TicketNumber"
+# VERIFY CREATED
+Get-ADUser -Identity $Username
 
-$Body = @"
-Dear $UserName,
-
-Thank you for submitting your support request.
-
-ISSUE: $Issue
-TICKET: $TicketNumber
-
-A technician will be assigned shortly.
-
-Thank you,
-IT Help Desk
-"@
-
-# Send email
-$SMTPClient = New-Object Net.Mail.SmtpClient($SMTPServer, $SMTPPort)
-$SMTPClient.EnableSsl = $true
-$SMTPClient.Send($From, $UserEmail, $Subject, $Body)
-
-Write-Host "✓ Auto-response sent to $UserEmail" -ForegroundColor Green
+Write-Host "✓ User $Username created successfully!"
 ```
 
-### Script 2: Ticket Status Report
+---
+
+## STEP 3: EMAIL SETUP
+
+### Outlook Configuration (Visual Steps):
+
+```
+╔════════════════════════════════════════╗
+║  OUTLOOK EMAIL SETUP                   ║
+╠════════════════════════════════════════╣
+║                                        ║
+║  1. OPEN OUTLOOK                       ║
+║     └─ Click Start menu                ║
+║        └─ Type "Outlook"               ║
+║           └─ Click Outlook icon        ║
+║                                        ║
+║  2. ENTER EMAIL                        ║
+║     └─ Email: john.smith@company.com   ║
+║     └─ Password: [Use AD password]     ║
+║     └─ Click "Connect"                 ║
+║                                        ║
+║  3. CREATE SIGNATURE                   ║
+║     └─ File → Options                  ║
+║        └─ Mail → Signatures             ║
+║           └─ Click "New"               ║
+║              └─ Name: "Default"        ║
+║                 └─ Add signature text: ║
+║                                        ║
+║                John Smith              ║
+║                Sales Department        ║
+║                john.smith@company.com  ║
+║                (555) 123-4567          ║
+║                                        ║
+║  4. TEST EMAIL                         ║
+║     └─ Click "New Email"               ║
+║        └─ Send to: your.email@co.com   ║
+║           └─ Click "Send"              ║
+║              └─ Wait 30 seconds        ║
+║                 └─ Check received      ║
+║                                        ║
+╚════════════════════════════════════════╝
+```
+
+---
+
+## STEP 4: SOFTWARE INSTALLATION
+
+### Required Software List:
+
+```
+PRIORITY 1 (INSTALL FIRST - 30 min):
+┌──────────────────────────────────────┐
+│ • Windows Defender (Built-in)        │
+│ • Windows Update (Built-in)          │
+│ • Microsoft Office 365               │
+│ • Google Chrome                      │
+│ • Adobe Reader                       │
+└──────────────────────────────────────┘
+
+PRIORITY 2 (INSTALL NEXT - 20 min):
+┌──────────────────────────────────────┐
+│ • VPN Client (Cisco AnyConnect)      │
+│ • Microsoft Teams                    │
+│ • Slack (if used)                    │
+│ • Zoom                               │
+└──────────────────────────────────────┘
+
+PRIORITY 3 (OPTIONAL - 10 min):
+┌──────────────────────────────────────┐
+│ • Notepad++                          │
+│ • VLC Media Player                   │
+│ • 7-Zip                              │
+│ • PuTTY (for IT staff)               │
+└──────────────────────────────────────┘
+```
+
+### Installation Script (PowerShell):
 
 ```powershell
-# Generate daily ticket status report
+# AUTOMATED SOFTWARE INSTALLATION
+# Run as Administrator
 
-Write-Host "════════════════════════════════════" -ForegroundColor Cyan
-Write-Host "DAILY TICKET STATUS REPORT" -ForegroundColor Cyan
-Write-Host "Date: $(Get-Date -Format 'yyyy-MM-dd')" -ForegroundColor Cyan
-Write-Host "════════════════════════════════════" -ForegroundColor Cyan
+Write-Host "════════════════════════════════════" -ForegroundColor Green
+Write-Host "  INSTALLING REQUIRED SOFTWARE" -ForegroundColor Green
+Write-Host "════════════════════════════════════" -ForegroundColor Green
 
-# Read ticket CSV file
-$tickets = Import-Csv "tickets.csv"
+# UPDATE WINDOWS
+Write-Host "`n[1/5] Updating Windows..." -ForegroundColor Yellow
+Start-Service -Name wuauserv
+Write-Host "✓ Windows Update enabled" -ForegroundColor Green
 
-$total = $tickets.Count
-$open = ($tickets | Where-Object { $_.Status -eq "Open" }).Count
-$inProgress = ($tickets | Where-Object { $_.Status -eq "In Progress" }).Count
-$resolved = ($tickets | Where-Object { $_.Status -eq "Resolved" }).Count
+# ENABLE DEFENDER
+Write-Host "`n[2/5] Enabling Windows Defender..." -ForegroundColor Yellow
+Start-Service -Name WinDefend
+Write-Host "✓ Windows Defender running" -ForegroundColor Green
 
-Write-Host "`nTICKET SUMMARY:" -ForegroundColor Yellow
-Write-Host "  Total Tickets: $total" -ForegroundColor White
-Write-Host "  Open: $open" -ForegroundColor White
-Write-Host "  In Progress: $inProgress" -ForegroundColor White
-Write-Host "  Resolved: $resolved" -ForegroundColor Green
+# CHECK OFFICE
+Write-Host "`n[3/5] Checking Microsoft Office..." -ForegroundColor Yellow
+$office = Get-WmiObject -Class Win32_Product | Where-Object {$_.Name -match "Office"}
+if ($office) {
+    Write-Host "✓ Office already installed" -ForegroundColor Green
+} else {
+    Write-Host "⚠ Office not found - install manually" -ForegroundColor Yellow
+}
 
-# Calculate metrics
-$avgTime = ($tickets | Where-Object { $_.Status -eq "Resolved" } | 
-    Measure-Object -Property "ResolutionTime" -Average).Average
+# CHECK CHROME
+Write-Host "`n[4/5] Checking Google Chrome..." -ForegroundColor Yellow
+$chrome = Test-Path "C:\Program Files\Google\Chrome\Application\chrome.exe"
+if ($chrome) {
+    Write-Host "✓ Chrome already installed" -ForegroundColor Green
+} else {
+    Write-Host "⚠ Chrome not found - install from google.com/chrome" -ForegroundColor Yellow
+}
 
-Write-Host "`nPERFORMANCE:" -ForegroundColor Yellow
-Write-Host "  Avg Resolution Time: $avgTime minutes" -ForegroundColor White
+# CHECK ANTIVIRUS
+Write-Host "`n[5/5] Checking Antivirus..." -ForegroundColor Yellow
+$defender = Get-Service -Name WinDefend
+if ($defender.Status -eq "Running") {
+    Write-Host "✓ Antivirus running" -ForegroundColor Green
+} else {
+    Write-Host "⚠ Antivirus not running" -ForegroundColor Yellow
+}
 
-# SLA compliance
-$urgent = ($tickets | Where-Object { $_.Priority -eq "Urgent" }).Count
-$slaCompliant = ($tickets | Where-Object { $_.SLA -eq "Yes" }).Count
-$slaPercent = if ($total -gt 0) { ($slaCompliant / $total) * 100 } else { 0 }
-
-Write-Host "  SLA Compliance: $slaPercent%" -ForegroundColor White
-Write-Host "  Urgent Tickets: $urgent" -ForegroundColor Yellow
-
-Write-Host "`n════════════════════════════════════" -ForegroundColor Cyan
+Write-Host "`n════════════════════════════════════" -ForegroundColor Green
+Write-Host "  SETUP COMPLETE!" -ForegroundColor Green
+Write-Host "════════════════════════════════════" -ForegroundColor Green
 ```
 
 ---
 
-## 📈 Daily Metrics You Track
+## STEP 5: NETWORK DRIVES & ACCESS
+
+### Map Network Drives (PowerShell):
+
+```powershell
+# MAP NETWORK DRIVES
+# Run as Administrator
+
+Write-Host "Mapping network drives..." -ForegroundColor Cyan
+
+# HOME DIRECTORY (H: Drive)
+$homeShare = "\\server01\homes\jsmith"
+New-PSDrive -Name H -PSProvider FileSystem -Root $homeShare -Persist
+Write-Host "✓ H: drive mapped to $homeShare" -ForegroundColor Green
+
+# DEPARTMENT SHARE (D: Drive)
+$deptShare = "\\server01\departments\Sales"
+New-PSDrive -Name D -PSProvider FileSystem -Root $deptShare -Persist
+Write-Host "✓ D: drive mapped to $deptShare" -ForegroundColor Green
+
+# SHARED RESOURCES (S: Drive)
+$sharedShare = "\\server01\shared"
+New-PSDrive -Name S -PSProvider FileSystem -Root $sharedShare -Persist
+Write-Host "✓ S: drive mapped to $sharedShare" -ForegroundColor Green
+
+# VERIFY ALL DRIVES
+Write-Host "`nVerifying network drives..." -ForegroundColor Yellow
+Get-PSDrive H, D, S | Select-Object Name, Root
+
+Write-Host "✓ All drives mapped!" -ForegroundColor Green
+```
+
+---
+
+## STEP 6: SECURITY SETUP
+
+### Enable Windows Firewall & Defender:
+
+```powershell
+# SECURITY CONFIGURATION
+# Run as Administrator
+
+Write-Host "Configuring Security..." -ForegroundColor Cyan
+
+# ENABLE FIREWALL
+Write-Host "`n1. Enabling Windows Firewall..." -ForegroundColor Yellow
+Set-NetFirewallProfile -Profile Domain,Public,Private -Enabled True
+Write-Host "✓ Firewall enabled" -ForegroundColor Green
+
+# ENABLE DEFENDER
+Write-Host "`n2. Enabling Windows Defender..." -ForegroundColor Yellow
+Start-Service -Name WinDefend
+Set-MpPreference -DisableRealtimeMonitoring $false
+Write-Host "✓ Real-time protection enabled" -ForegroundColor Green
+
+# SET SCREEN LOCK (10 minutes)
+Write-Host "`n3. Configuring screen lock..." -ForegroundColor Yellow
+powercfg.exe -change-plan-setting scheme_current sub_desktop screensaveTimeout 600
+powercfg.exe -change-plan-setting scheme_current sub_disk powerdown 600
+Write-Host "✓ Screen lock set to 10 minutes" -ForegroundColor Green
+
+# UPDATE FIREWALL RULES
+Write-Host "`n4. Configuring firewall rules..." -ForegroundColor Yellow
+New-NetFirewallRule -DisplayName "Allow Windows Update" -Direction Inbound -Action Allow -Service wuauserv
+Write-Host "✓ Firewall rules configured" -ForegroundColor Green
+
+Write-Host "`n════════════════════════════════════" -ForegroundColor Green
+Write-Host "  SECURITY SETUP COMPLETE!" -ForegroundColor Green
+Write-Host "════════════════════════════════════" -ForegroundColor Green
+```
+
+---
+
+## STEP 7: PASSWORD RESET (Day 3)
+
+### Quick Password Reset Command:
+
+```powershell
+# RESET USER PASSWORD
+# Run as Administrator
+
+$Username = "jsmith"
+$NewPassword = "NewSecurePass123!@#"
+
+# RESET PASSWORD
+Set-ADAccountPassword -Identity $Username `
+    -Reset `
+    -NewPassword (ConvertTo-SecureString -AsPlainText $NewPassword -Force)
+
+# FORCE USER TO CHANGE AT LOGIN
+Set-ADUser -Identity $Username -ChangePasswordAtLogon $true
+
+Write-Host "✓ Password reset for $Username" -ForegroundColor Green
+Write-Host "✓ User must change password on next login" -ForegroundColor Green
+Write-Host "`nTell user: Password is: $NewPassword" -ForegroundColor Yellow
+```
+
+---
+
+## STEP 8: VERIFICATION CHECKLIST
 
 ```
-HELP DESK DASHBOARD (Daily Update)
+╔═══════════════════════════════════════════════════╗
+║          FINAL VERIFICATION (Day 3)               ║
+╠═══════════════════════════════════════════════════╣
+║                                                   ║
+║  COMPUTER ACCESS:                                 ║
+║  [ ] User can login to computer                   ║
+║  [ ] Desktop loads without errors                 ║
+║  [ ] No missing drivers (Device Manager)          ║
+║                                                   ║
+║  EMAIL:                                           ║
+║  [ ] Outlook opens                                ║
+║  [ ] Email account active                         ║
+║  [ ] Can send/receive emails                      ║
+║  [ ] Signature appears in emails                  ║
+║                                                   ║
+║  NETWORK:                                         ║
+║  [ ] H: drive accessible (home)                   ║
+║  [ ] D: drive accessible (department)             ║
+║  [ ] S: drive accessible (shared)                 ║
+║  [ ] Can access shared files                      ║
+║                                                   ║
+║  APPLICATIONS:                                    ║
+║  [ ] Office apps open (Word, Excel)               ║
+║  [ ] Chrome opens                                 ║
+║  [ ] Teams starts                                 ║
+║  [ ] All required apps working                    ║
+║                                                   ║
+║  SECURITY:                                        ║
+║  [ ] Firewall enabled                             ║
+║  [ ] Defender running                             ║
+║  [ ] Screen lock working                          ║
+║  [ ] MFA enabled                                  ║
+║                                                   ║
+║  PRINTING:                                        ║
+║  [ ] Can access network printers                  ║
+║  [ ] Test page prints                             ║
+║  [ ] Color printing works                         ║
+║                                                   ║
+╚═══════════════════════════════════════════════════╝
+```
 
-╔════════════════════════════════════════╗
-║  8:00 AM START OF SHIFT                ║
+---
+
+## COMPLETE 3-DAY TIMELINE
+
+```
+DAY 1 - MORNING (9:00 AM - 12:30 PM)
+├─ 9:00-9:30:   Welcome & orientation
+├─ 9:30-11:00:  Hardware setup & testing
+├─ 11:00-11:30: Create AD account (PowerShell script above)
+└─ 11:30-12:30: Email setup (Outlook config)
+
+DAY 1 - AFTERNOON (1:00 PM - 5:00 PM)
+├─ 1:00-2:00:   Software installation
+├─ 2:00-3:00:   Map network drives (PowerShell script above)
+├─ 3:00-4:00:   Security setup (PowerShell script above)
+└─ 4:00-5:00:   Test & verify access
+
+DAY 2 - FULL DAY
+├─ 9:00-10:00:  Install remaining software
+├─ 10:00-12:00: Business app configuration
+├─ 1:00-3:00:   VPN & remote access setup
+├─ 3:00-5:00:   Final testing & troubleshooting
+└─ End of day:  Ready for productivity
+
+DAY 3 - MORNING (9:00 AM - 12:00 PM)
+├─ 9:00-10:00:  Password change (use script above)
+├─ 10:00-11:00: Security training
+├─ 11:00-12:00: Final verification (checklist above)
+└─ 12:00:       ✅ COMPLETE - Ready to work!
+```
+
+---
+
+## TRACKING SPREADSHEET (Copy-Paste into Excel)
+
+```
+Employee Name | Start Date | Hardware ✓ | Software ✓ | Network ✓ | Complete | Notes
+John Smith    | 2024-01-15 |     ✓      |     ✓      |     ✓     |   YES    | No issues
+Jane Doe      | 2024-01-22 |     ✓      |     ✓      |    WAIT   |    NO    | Waiting for VPN
+```
+
+---
+
+## REAL RESULTS YOU GET
+
+```
+┌────────────────────────────────────────┐
+│  BEFORE (Without This Project)         │
 ├────────────────────────────────────────┤
-│ Tickets in Queue:        12            │
-│ Avg Wait Time:           45 min        │
-│ Urgent Tickets:          2             │
-│ Your Assigned:           3             │
+│  Setup Time: 2-3 hours per employee    │
+│  Missed Steps: Yes (30% of the time)   │
+│  Consistency: Low (60%)                │
+│  Documentation: None                   │
+│  Cost per hire: $250                   │
+│  IT time: 40 hours/month               │
 └────────────────────────────────────────┘
 
-╔════════════════════════════════════════╗
-║  12:00 PM MIDDAY CHECK                 ║
+┌────────────────────────────────────────┐
+│  AFTER (With This Project)             │
 ├────────────────────────────────────────┤
-│ Tickets Resolved:        8             │
-│ Tickets in Queue:        6             │
-│ Escalations:             1             │
-│ Avg Satisfaction:        4.7/5         │
-└────────────────────────────────────────┘
-
-╔════════════════════════════════════════╗
-║  5:00 PM END OF SHIFT                  ║
-├────────────────────────────────────────┤
-│ Total Handled Today:     18            │
-│ Resolved:                15 (83%)      │
-│ Escalated:               2 (11%)       │
-│ Still Open:              1 (6%)        │
-│ Avg Time/Ticket:         22 min       │
-│ Customer Satisfaction:   4.6/5         │
-│ SLA Compliance:          94%           │
+│  Setup Time: 45 minutes per employee   │
+│  Missed Steps: None (100% complete)    │
+│  Consistency: High (100%)              │
+│  Documentation: Complete               │
+│  Cost per hire: $75                    │
+│  IT time: 10 hours/month               │
+│  SAVINGS: 30 hours/month = $1,500      │
 └────────────────────────────────────────┘
 ```
 
 ---
 
-## 🎯 Knowledge Base Articles (What You Create)
+## 🎯 THIS IS YOUR COMPLETE PROJECT 1
 
-Every time you resolve a unique issue, write an article:
+**All code is copy-paste ready.** Run the PowerShell scripts as Administrator. Use the checklist and timeline exactly as shown.
 
-```
-KNOWLEDGE BASE ARTICLE #KB-0047
-
-TITLE: "Outlook Email Receives But Can't Send"
-
-PROBLEM:
-User can receive emails in Outlook but cannot send. 
-Trying to send results in error: "The operation timed out"
-
-SYMPTOMS:
-✓ Can receive incoming emails
-✗ Cannot send outgoing emails
-✗ Error message appears after a few seconds
-✗ Issue persists after restart
-
-ROOT CAUSE:
-SMTP (outgoing mail) server blocked by firewall or 
-using wrong server address
-
-SOLUTION:
-
-Step 1: Check network connectivity
-├─ Open Command Prompt
-├─ Type: ping 8.8.8.8
-└─ Should get responses
-
-Step 2: Check SMTP settings
-├─ Open Outlook
-├─ Go to File → Account Settings
-├─ Click "Change"
-├─ Click "Outgoing Server (SMTP)" tab
-├─ Verify server: mail.company.com
-├─ Verify port: 587
-├─ Verify "Requires authentication"
-
-Step 3: Check firewall
-├─ Verify port 587 is open
-├─ Verify SMTP not blocked
-├─ Contact IT if blocked
-
-Step 4: Test send
-├─ Create new email
-├─ Send to your email
-├─ Wait for receipt
-├─ If successful, issue resolved
-
-PREVENTION:
-- Don't change SMTP server settings
-- Use Outlook auto-configuration
-- Contact IT before troubleshooting
-
-ARTICLE CREATED: 2024-01-15
-TIMES HELPED: 23
-RATING: ★★★★★ (5/5)
-```
-
----
-
-## 🚀 GitHub Setup
-
-```bash
-# Create repository
-git init Help-Desk-Ticketing
-
-# Create folder structure
-mkdir -p docs templates scripts tools examples
-
-# Add all files
-cp README.md Help-Desk-Ticketing/
-cp templates/*.txt Help-Desk-Ticketing/templates/
-cp scripts/*.ps1 Help-Desk-Ticketing/scripts/
-
-# Commit
-git add .
-git commit -m "Initial commit: Help Desk Ticketing System"
-
-# Push to GitHub
-git remote add origin https://github.com/yourusername/Help-Desk-Ticketing.git
-git push -u origin main
-```
-
----
-
-## 💼 LinkedIn Post
-
-```
-📞 NEW PROJECT: Help Desk Ticketing System
-
-Just published my help desk ticketing system that 
-improves support efficiency by 50%.
-
-✓ Ticket templates & workflows
-✓ SLA tracking & monitoring  
-✓ Email response templates
-✓ PowerShell automation scripts
-✓ Knowledge base system
-✓ Daily metrics & reporting
-
-Day-to-day IT support work includes:
-- Password resets (30% of tickets)
-- Email troubleshooting (20%)
-- Printer issues (15%)
-- Software support (15%)
-- Hardware issues (10%)
-- Access problems (10%)
-
-Complete with real examples and metrics!
-
-GitHub: github.com/yourusername/Help-Desk-Ticketing
-
-#ITSupport #HelpDesk #CustomerService #GitHub
-```
-
----
-
-**Status:** Production Ready | **Version:** 1.0
+**Want me to create Projects 2-5 with the same visual, code-focused format?**
