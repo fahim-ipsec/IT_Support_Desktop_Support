@@ -124,47 +124,6 @@ TYPICAL ASSET MANAGEMENT DAY:
 5:00 PM - END OF SHIFT
 ```
 
----
-
-## 📁 Project Structure
-
-```
-Hardware-Inventory-System/
-├── README.md (this file)
-├── USAGE.md
-├── LICENSE
-├── docs/
-│   ├── Asset-Categories.md
-│   ├── Warranty-Tracking.md
-│   ├── Depreciation-Guide.md
-│   ├── Audit-Procedures.md
-│   └── Lifecycle-Management.md
-├── scripts/
-│   ├── 01-Create-Asset-Database.ps1
-│   ├── 02-Import-Equipment.ps1
-│   ├── 03-Generate-Inventory-Report.ps1
-│   ├── 04-Track-Warranty.ps1
-│   ├── 05-Calculate-Depreciation.ps1
-│   └── 06-Audit-Assets.ps1
-├── templates/
-│   ├── Asset-Tag-Label.txt
-│   ├── Inventory-Checklist.txt
-│   ├── Equipment-Intake-Form.txt
-│   ├── Equipment-Return-Form.txt
-│   ├── Asset-Database.csv
-│   ├── Warranty-Tracker.csv
-│   └── Depreciation-Schedule.csv
-├── tools/
-│   ├── Inventory-Dashboard.html
-│   ├── Asset-Search-Tool.html
-│   └── Warranty-Alert-System.html
-└── examples/
-    ├── sample-inventory.csv
-    ├── warranty-report.txt
-    └── audit-results.txt
-```
-
----
 
 ## 🔧 Hardware Categories & Tracking
 
