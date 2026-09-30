@@ -36,6 +36,3 @@ This repository contains 15 production-ready PowerShell scripts designed to auto
   * Assigns secure default passwords and forces a password reset on first login.
   * Handles duplicate accounts and missing paths gracefully without stopping the script execution.
  
-```
-Use this interactive view to track status across categories, review cmdlets, and plan your development workflow for GitHub presentation:[interactive_visual_im_632513f5cf26b3b4.html](https://github.com/user-attachments/files/32875368/interactive_visual_im_632513f5cf26b3b4.html)
-
