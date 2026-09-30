@@ -5,10 +5,7 @@
     This script cleans temporary files and logs older than X days.
     It shows a preview of what will be deleted, asks for confirmation,
     and generates a detailed log report.
-.AUTHOR
-    [YOUR NAME]
-.DATE
-    [CURRENT DATE]
+
 #>
 
 # Clear screen
