@@ -31,7 +31,7 @@ This is a **Desktop Support Automation Tool** built using PowerShell. It safely 
 
 ### Option 1: Clone the Repository
 ```bash
-git clone https://github.com/YOUR-USERNAME/IT_Support_Desktop_Support.git
+git clone https://github.com/fahim-ipsec/IT_Support_Desktop_Support.git
 cd IT_Support_Desktop_Support/Temp_File_Cleanup
 ```
 
